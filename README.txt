@@ -1,22 +1,18 @@
-NIFTY 1-MINUTE LIVE OPTION CHAIN RECORDER & DASHBOARD
-======================================================
+NIFTY LIVE OPTION CHAIN RECORDER - COMPLETE RENDER & GITHUB PACKAGE
+=====================================================================
 
-या ZIP फाईलमध्ये सर्व आवश्यक फाइल्स दिलेल्या आहेत:
+या ZIP फाईलमध्ये सर्वच्या सर्व आवश्यक फाइल्स आहेत:
 
-1. index.html    : मुख्य UI (Tailwind CSS, डॅशबोर्ड, चार्ट्स, टेबल्स)
-2. app.js        : ऑटो 1-मिनिट रेकॉर्डर, ATM +/-2 स्ट्राइक्स अनॅलिसिस, सिग्नल इंजिन
-3. manifest.json : PWA / Android APK साठी लागणारे कॉन्फिगरेशन
-4. app.py        : पायथन सर्व्हर (बॅकग्राउंडमध्ये २४ तास रेकॉर्ड करण्यासाठी)
-5. Start_App.bat : कॉम्प्युटरवर 1-क्लिकमध्ये अ‍ॅप सुरू करण्याची बॅच फाईल
+1. requirements.txt -> Render/Python साठीच्या सर्व लायब्ररी (flask, requests, pandas, openpyxl, apscheduler, pytz, gunicorn)
+2. app.py           -> मुख्य सर्व्हर, बॅकग्राउंड 1-मिनिट ऑटो-रेकॉर्डर, HTML डॅशबोर्ड, एक्सेल एक्सपोर्ट
+3. Procfile         -> Render production सर्व्हर चालू करण्याची कमांड
+4. render.yaml      -> Render ऑटोमॅटिक कॉन्फिगरेशन फाईल
+5. .gitignore       -> अनावश्यक फाईल्स रोखण्यासाठी
 
 ---
-वापर कसा करावा?
+कसे चालवायचे? (सोप्या स्टेप्स)
 
-पर्याय १ (WebIntoApp द्वारे APK बनवणे):
-- WebIntoApp.com वर जा.
-- ही संपूर्ण ZIP फाइल अपलोड करा.
-- थेट .apk फाइल डाउनलोड करून मोबाईलमध्ये इन्स्टॉल करा.
-
-पर्याय २ (थेट कॉम्प्युटरवर चालवणे):
-- ZIP अनझिप करा.
-- Start_App.bat वर डबल क्लिक करा.
+1. ही ZIP अनझिप (Extract) करा.
+2. GitHub.com वर जाऊन या सर्व ५ फाईल्स (requirements.txt, app.py, Procfile, render.yaml, .gitignore) नवीन रिपॉझिटरीमध्ये अपलोड करा.
+3. Render.com वर जाऊन GitHub अकाउंट कनेक्ट करून 'Web Service' म्हणून डिप्लॉय करा.
+4. Render आपोआप requirements.txt वाचून सर्व काही चालू करून देईल!
